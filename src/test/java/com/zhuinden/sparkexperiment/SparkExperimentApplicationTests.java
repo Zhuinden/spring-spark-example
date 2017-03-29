@@ -1,4 +1,4 @@
-package com.zhuinden;
+package com.zhuinden.sparkexperiment;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
