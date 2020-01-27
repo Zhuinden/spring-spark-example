@@ -35,8 +35,11 @@ public class ApplicationConfig {
         SparkConf sparkConf = new SparkConf()
                 .setAppName(appName)
                 .setSparkHome(sparkHome)
-                .setMaster(masterUri);
-
+                .setMaster(masterUri)
+                .set("spark.mongodb.input.uri", "mongodb://localhost/DB.Collection")		 
+        		.set("spark.mongodb.output.uri","mongodb://localhost/DB.Collection")
+                ;
+         
         return sparkConf;
     }
 
